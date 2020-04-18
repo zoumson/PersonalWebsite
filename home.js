@@ -4,6 +4,7 @@ var title = document.title;
 /* sidebar click event trigger closing of actual page and openning of the button pressed page */
 /* home button pressed */
 var homeButton = document.querySelector(".sidebar-home-text");
+
 homeButton.addEventListener('click', () => {
     /* do nothing if actual page is home page */
     if (title != 'home') {
@@ -44,3 +45,4 @@ contactButton.addEventListener('click', () => {
 });
 
 /* end of sidebar button clicking event */
+/* button hover even */

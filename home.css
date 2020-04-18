@@ -7,32 +7,14 @@ body {
     height: 100%;
     position: fixed;
     width: 100%;
-    //background-color: green;
-    /*background-color: red;*/
-    background: linear-gradient(grey 20%, #3f000f 70%, black 99%, white 100%);
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: fantasy;
+    font-family: fantasy, 'Rubik Mono One', sans-serif;
     margin: 0;
     padding: 0px;
     border: 0px;
     cursor: default;
-    box-shadow:
-        inset 0 0 50px #fff,
-        /* inner white */
-        inset 20px 0 80px #f0f,
-        /* inner left magenta short */
-        inset -20px 0 80px #f0f,
-        /* inner right cyan short */
-        inset 20px 0 300px #f0f,
-        /* inner left magenta broad */
-        inset -20px 0 300px #f0f,
-        /* inner right cyan broad */
-        0 0 50px #fff,
-        /* outer white */
-        -10px 0 80px #f0f,
-        /* outer left magenta */
-        10px 0 80px #f0f;
 }
 
 
@@ -53,7 +35,7 @@ body {
 
 /* upper page container*/
 .upper-page {
-    height: 10%;
+    height: 20%;
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
@@ -63,6 +45,8 @@ body {
 /* upper page items*/
 
 .icon {
+    height: 100%;
+    width: 10%;
     margin-left: 1%;
     padding: 1%;
     display: flex;
@@ -70,42 +54,24 @@ body {
     align-content: flex-start;
     position: -webkit-sticky;
     position: sticky;
+
+
 }
 
 
 .icon img {
-    width: 5%;
-    height: 5%;
-    border-style: solid;
-    border-width: thick;
-    border-color: gey;
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 10%;
-    border-bottom-left-radius: 50% 10%;
-    border-bottom-right-radius: 50% 50%;
-    box-shadow:
-        inset 0 0 5px #fff,
-        /* inner white */
-        inset 1px 0 5px black,
-        /* inner left magenta short */
-        inset -1px 0 5px black,
-        /* inner right cyan short */
-        inset 1px 0 5px black,
-        /* inner left magenta broad */
-        inset -1px 0 5px black,
-        /* inner right cyan broad */
-        0 0 5px #fff,
-        /* outer white */
-        -1px 0 4px black,
-        /* outer left magenta */
-        1px 0 4px
+    height: 100%;
+    width: 100%;
+    //width: 20%;
+    //height: 5%;
+    transform: scaleX(-1)
 }
 
 /* lower page container*/
 .lower-page {
     margin-top: 5%;
     display: flex;
-    height: 85%;
+    height: 80%;
     width: 100%;
     justify-content: space-between;
     padding-bottom: 2%;
@@ -212,6 +178,7 @@ body {
     align-content: space-between;
 }
 
+/* different */
 .self-description {
     overflow: auto;
     text-align: center;
@@ -223,40 +190,24 @@ body {
     color: black;
     background-color: white;
     text-align: center;
-    border-top-left-radius: 50% 10%;
-    border-top-right-radius: 50% 10%;
-    border-bottom-left-radius: 50% 10%;
-    border-bottom-right-radius: 50% 10%;
+    border-radius: 10% 10%;
     padding: 5%;
     border-style: solid;
-    border-color: #9B870C;
+    border-color: black;
     border-width: thick;
-    box-shadow:
-        inset 0 0 50px #fff,
-        /* inner white */
-        inset 20px 0 80px yellow,
-        /* inner left magenta short */
-        inset -20px 0 80px yellow,
-        /* inner right cyan short */
-        inset 20px 0 300px yellow,
-        /* inner left magenta broad */
-        inset -20px 0 300px yellow,
-        /* inner right cyan broad */
-        0 0 50px #fff,
-        /* outer white */
-        -10px 0 80px yellow,
-        /* outer left magenta */
-        10px 0 80px yellow;
+
 }
 
 .cv-download {
     padding: 4%;
     text-align: center;
-    background-color: black;
+    background-color: grey;
     margin-right: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10%;
+
 
 }
 
@@ -271,58 +222,21 @@ body {
 .cv-download a:active {
     color: black;
     border-style: solid;
-    border-color: #9B870C;
+    border-color: white;
     border-width: thick;
-
-    border-top-left-radius: 50% 20px;
-    border-top-right-radius: 50% 20px;
-    border-bottom-left-radius: 50% 20px;
-    border-bottom-right-radius: 50% 20px;
-    box-shadow:
-        inset 0 0 50px #fff,
-        /* inner white */
-        inset 20px 0 80px green,
-        /* inner left magenta short */
-        inset -20px 0 80px green,
-        /* inner right cyan short */
-        inset 20px 0 300px green,
-        /* inner left magenta broad */
-        inset -20px 0 300px green,
-        /* inner right cyan broad */
-        0 0 50px #fff,
-        /* outer white */
-        -10px 0 80px green,
-        /* outer left magenta */
-        10px 0 80px
+    background-color: white;
+    border-radius: 10%;
 }
 
 .cv-download a:hover {
+    background-color: white;
+    border-radius: 10%;
     text-decoration: none;
     color: black;
     border-style: solid;
-    border-color: yellow;
+    border-color: white;
     border-width: thick;
 
-    border-top-left-radius: 50% 20px;
-    border-top-right-radius: 50% 20px;
-    border-bottom-left-radius: 50% 20px;
-    border-bottom-right-radius: 50% 20px;
-    box-shadow:
-        inset 0 0 50px #fff,
-        /* inner white */
-        inset 20px 0 80px yellow,
-        /* inner left magenta short */
-        inset -20px 0 80px yellow,
-        /* inner right cyan short */
-        inset 20px 0 300px yellow,
-        /* inner left magenta broad */
-        inset -20px 0 300px yellow,
-        /* inner right cyan broad */
-        0 0 50px #fff,
-        /* outer white */
-        -10px 0 80px yellow,
-        /* outer left magenta */
-        10px 0 80px yellow;
 }
 
 
@@ -347,7 +261,6 @@ body {
 .sidebar-home {
     width: 100%;
     height: 100%;
-    border-width: 30px;
     top: 0.0%;
     left: 0.0%;
 
@@ -356,7 +269,6 @@ body {
 .sidebar-about {
     width: 80%;
     height: 70%;
-    border-width: 30px;
     top: 15%;
     right: 10%
 }
@@ -364,15 +276,14 @@ body {
 .sidebar-blog {
     width: 60%;
     height: 40%;
-    border-width: 20px;
-    top: 30%;
-    right: 20%
+    top: 28%;
+    right: 20%;
+
 }
 
 .sidebar-contact {
     width: 45%;
     height: 20%;
-    border-width: 20px;
     top: 40%;
     right: 28%;
     margin-bottom: 10%;
@@ -382,12 +293,6 @@ body {
 
 .ring {
     position: absolute;
-    border-bottom-color: #3b3b3b;
-    border-top-color: #421705;
-    border-left-color: #3b3b3b;
-    border-right-color: #3b3b3b;
-    border-style: solid;
-    border-radius: 50%;
     transition: all 50ms;
     color: white;
     display: inline;
@@ -402,179 +307,39 @@ body {
 }
 
 
-
-
-/* demo extras, shadow and color manipulation during hover */
-[btn] {
-    box-shadow: inset 0 0 1px grey,
-        /* hide white overflow (quirk) */
-        inset 10px 10px 10px hsla(205, 69%, 8%, .3),
-        /* inset shadow */
-        0 0 1px grey,
-        /* hide white overflow (ditto) */
-        20px 20px 10px hsla(205, 69%, 8%, .4),
-        /* inner outside shadow */
-        0 0 1px hsla(205, 69%, 8%, .3)
-}
-
-/* outer outside shadow */
-
-[btn]:hover {
-    border-color: white;
+.sidebar-text {
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 90%;
+    text-align: center;
+    border-radius: 50% 10%;
+    padding: 5%;
+    border-style: solid;
+    border-width: thick;
+
 }
-
-
-[btn]:active {
-    border-color: #00ff00;
-    box-shadow:
-        inset 0 0 50px #fff,
-        /* inner white */
-        inset 20px 0 80px green,
-        /* inner left magenta short */
-        inset -20px 0 80px #0ff,
-        /* inner right cyan short */
-        inset 20px 0 300px green,
-        /* inner left magenta broad */
-        inset -20px 0 300px #0ff,
-        /* inner right cyan broad */
-        0 0 50px #fff,
-        /* outer white */
-        -10px 0 80px green,
-        /* outer left magenta */
-        10px 0 80px #0ff;
-}
-
-
-
 
 .sidebar-blog-text,
-.sidebar-about-text {
-    color: black;
-    font-weight: bolder;
-    font-size: 90%;
-    background-color: #ef6c33;
-    text-align: center;
-    border-top-left-radius: 50% 40%;
-    border-top-right-radius: 50% 40%;
-    border-bottom-left-radius: 50% 40%;
-    border-bottom-right-radius: 50% 40%;
-    padding: 5%;
-    border-style: solid;
-    border-color: #f0f;
-    border-width: thick;
-    box-shadow:
-        inset 0 0 50px #fff,
-        /* inner white */
-        inset 20px 0 80px #f0f,
-        /* inner left magenta short */
-        inset -20px 0 80px #0ff,
-        /* inner right cyan short */
-        inset 20px 0 300px #f0f,
-        /* inner left magenta broad */
-        inset -20px 0 300px #0ff,
-        /* inner right cyan broad */
-        0 0 50px #fff,
-        /* outer white */
-        -10px 0 80px #f0f,
-        /* outer left magenta */
-        10px 0 80px #0ff;
-
-}
-
+.sidebar-about-text,
 .sidebar-contact-text {
-    color: black;
-    font-weight: bolder;
-    left: 0;
-    width: 100%;
-    font-size: 90%;
-    background-color: #ef6c33;
-    text-align: center;
-    border-top-left-radius: 50% 40%;
-    border-top-right-radius: 50% 40%;
-    border-bottom-left-radius: 50% 40%;
-    border-bottom-right-radius: 50% 40%;
-    padding: 5%;
-    border-style: solid;
-    border-color: #f0f;
-    border-width: thick;
-    box-shadow:
-        inset 0 0 50px #fff,
-        /* inner white */
-        inset 20px 0 80px #f0f,
-        /* inner left magenta short */
-        inset -20px 0 80px #0ff,
-        /* inner right cyan short */
-        inset 20px 0 300px #f0f,
-        /* inner left magenta broad */
-        inset -20px 0 300px #0ff,
-        /* inner right cyan broad */
-        0 0 50px #fff,
-        /* outer white */
-        -10px 0 80px #f0f,
-        /* outer left magenta */
-        10px 0 80px #0ff;
+    color: white;
+    border-color: white;
+    background-color: black;
 
 }
-
-
 
 .sidebar-home-text {
     color: black;
-    font-weight: bolder;
-    font-size: 90%;
+    border-color: black;
     background-color: white;
-    text-align: center;
-    border-top-left-radius: 50% 10%;
-    border-top-right-radius: 50% 10%;
-    border-bottom-left-radius: 50% 10%;
-    border-bottom-right-radius: 50% 10%;
-    padding: 5%;
-    border-style: solid;
-    border-color: #9B870C;
-    border-width: thick;
-    box-shadow:
-        inset 0 0 50px #fff,
-        /* inner white */
-        inset 20px 0 80px yellow,
-        /* inner left magenta short */
-        inset -20px 0 80px yellow,
-        /* inner right cyan short */
-        inset 20px 0 300px yellow,
-        /* inner left magenta broad */
-        inset -20px 0 300px yellow,
-        /* inner right cyan broad */
-        0 0 50px #fff,
-        /* outer white */
-        -10px 0 80px yellow,
-        /* outer left magenta */
-        10px 0 80px yellow;
-
 }
 
-.ring h2:hover {
-    color: blue;
-    background-color: #97360c;
+
+.sidebar-text:hover {
+    color: white;
+    background-color: grey;
     border-style: solid;
     border-color: white;
     border-width: thick;
-    box-shadow:
-        inset 0 0 50px #fff,
-        /* inner white */
-        inset 20px 0 80px #00ff00,
-        /* inner left magenta short */
-        inset -20px 0 80px #0ff,
-        /* inner right cyan short */
-        inset 20px 0 300px #00ff00,
-        /* inner left magenta broad */
-        inset -20px 0 300px #0ff,
-        /* inner right cyan broad */
-        0 0 50px #fff,
-        /* outer white */
-        -10px 0 80px #00ff00,
-        /* outer left magenta */
-        10px 0 80px #0ff;
 }
 
 
@@ -601,7 +366,6 @@ body {
 .icon,
 .main-content,
 .sidebar {
-    /* border: 3px solid black;*/
     padding: 1%;
 }
 
@@ -680,125 +444,26 @@ body {
         margin-bottom: 10%;
     }
 
-
-
-
     .sidebar-blog-text,
-    .sidebar-about-text {
-        color: black;
-        font-weight: bolder;
-        font-size: 90%;
-        background-color: #ef6c33;
-        text-align: center;
-        border-top-left-radius: 10% 10%;
-        border-top-right-radius: 10% 10%;
-        border-bottom-left-radius: 10% 10%;
-        border-bottom-right-radius: 10% 10%;
-        padding: 5%;
-        border-style: solid;
-        border-color: #f0f;
-        border-width: thin;
-        box-shadow:
-            inset 0 0 50px #fff,
-            /* inner white */
-            inset 20px 0 80px #f0f,
-            /* inner left magenta short */
-            inset -20px 0 80px #0ff,
-            /* inner right cyan short */
-            inset 20px 0 300px #f0f,
-            /* inner left magenta broad */
-            inset -20px 0 300px #0ff,
-            /* inner right cyan broad */
-            0 0 50px #fff,
-            /* outer white */
-            -10px 0 80px #f0f,
-            /* outer left magenta */
-            10px 0 80px #0ff;
-
-    }
-
-    .sidebar-contact-text {
-        color: black;
-        font-weight: bolder;
-        left: 0;
-        width: 100%;
-        font-size: 90%;
-        background-color: #ef6c33;
-        text-align: center;
-        border-top-left-radius: 10% 10%;
-        border-top-right-radius: 10% 10%;
-        border-bottom-left-radius: 10% 10%;
-        border-bottom-right-radius: 10% 10%;
-        padding: 5%;
-        border-style: solid;
-        border-color: #f0f;
-        border-width: thin;
-        box-shadow:
-            inset 0 0 50px #fff,
-            /* inner white */
-            inset 20px 0 80px #f0f,
-            /* inner left magenta short */
-            inset -20px 0 80px #0ff,
-            /* inner right cyan short */
-            inset 20px 0 300px #f0f,
-            /* inner left magenta broad */
-            inset -20px 0 300px #0ff,
-            /* inner right cyan broad */
-            0 0 50px #fff,
-            /* outer white */
-            -10px 0 80px #f0f,
-            /* outer left magenta */
-            10px 0 80px #0ff;
-
-    }
-
-
-
+    .sidebar-about-text,
+    .sidebar-contact-text,
     .sidebar-home-text {
-        color: black;
-        font-weight: bolder;
-        font-size: 90%;
-        background-color: white;
-        text-align: center;
-        border-top-left-radius: 10% 10%;
-        border-top-right-radius: 10% 10%;
-        border-bottom-left-radius: 10% 10%;
-        border-bottom-right-radius: 10% 10%;
-        padding: 5%;
-        border-style: solid;
-        border-color: #9B870C;
         border-width: thin;
-        box-shadow:
-            inset 0 0 50px #fff,
-            /* inner white */
-            inset 20px 0 80px yellow,
-            /* inner left magenta short */
-            inset -20px 0 80px yellow,
-            /* inner right cyan short */
-            inset 20px 0 300px yellow,
-            /* inner left magenta broad */
-            inset -20px 0 300px yellow,
-            /* inner right cyan broad */
-            0 0 50px #fff,
-            /* outer white */
-            -10px 0 80px yellow,
-            /* outer left magenta */
-            10px 0 80px yellow;
 
     }
+
+
 
     .ring {
         position: absolute;
-        border-bottom-color: #3b3b3b;
-        border-top-color: #421705;
-        border-left-color: #3b3b3b;
-        border-right-color: #3b3b3b;
+        border-color: grey;
         border-style: solid;
         border-radius: 10%;
         transition: all 50ms;
         color: white;
         display: inline;
     }
+
 
 
 }
@@ -819,7 +484,6 @@ body {
     .sidebar-home {
         width: 100%;
         height: 100%;
-        border-width: 10px;
         top: 0.0%;
         left: 0.0%;
 
@@ -828,7 +492,6 @@ body {
     .sidebar-about {
         width: 100%;
         height: 70%;
-        border-width: 10px;
         top: 15%;
         left: 0.0%;
     }
@@ -836,7 +499,6 @@ body {
     .sidebar-blog {
         width: 100%;
         height: 40%;
-        border-width: 10px;
         top: 30%;
         left: 0.0%;
     }
@@ -844,7 +506,6 @@ body {
     .sidebar-contact {
         width: 100%;
         height: 20%;
-        border-width: 10px;
         top: 40%;
         left: 0.0%;
         margin-bottom: 10%;
@@ -857,6 +518,9 @@ body {
     .cv-download {
         order: 1;
     }
+
+
+
 
 }
 
@@ -876,7 +540,6 @@ body {
     .sidebar-home {
         width: 100%;
         height: 100%;
-        border-width: 1px;
         top: 0.0%;
         left: 0.0%;
 
@@ -885,7 +548,6 @@ body {
     .sidebar-about {
         width: 100%;
         height: 70%;
-        border-width: 1px;
         top: 15%;
         left: 0.0%;
     }
@@ -893,7 +555,6 @@ body {
     .sidebar-blog {
         width: 100%;
         height: 40%;
-        border-width: 1px;
         top: 30%;
         left: 0.0%;
     }
@@ -901,11 +562,12 @@ body {
     .sidebar-contact {
         width: 100%;
         height: 20%;
-        border-width: 1px;
         top: 45%;
         left: 0.0%;
         margin-bottom: 0%;
     }
+
+
 
 
 }
@@ -949,9 +611,6 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
-        border-style: double;
-        border-color: white;
-        border-width: thick;
 
     }
 
@@ -968,243 +627,20 @@ body {
     #sidebar-shape-donut {
         width: 100%;
         height: 80%;
-        border-style: double;
-        border-color: white;
-        border-width: thick;
 
     }
 
-    .sidebar-home {
+    .sidebar-element {
         width: 25%;
-        border-width: 0;
 
     }
-
-    .sidebar-about {
-        width: 25%;
-        border-width: 0;
-
-    }
-
-    .sidebar-blog {
-        width: 25%;
-        border-width: 0;
-    }
-
-    .sidebar-contact {
-        width: 25%;
-        border-width: 0;
-    }
-
 
 
     .ring {
         position: relative;
-        border-bottom-color: #3b3b3b;
-        border-top-color: #421705;
-        border-left-color: #3b3b3b;
-        border-right-color: #3b3b3b;
-        border-style: solid;
-        border-radius: 50%;
-        transition: all 50ms;
-        color: white;
         display: inline;
     }
 
-    .ring:hover {
-        transform: scale(1.2);
-    }
-
-    .ring:active {
-        transform: scale(0.95);
-    }
-
-
-
-
-    /* demo extras, shadow and color manipulation during hover */
-    [btn] {
-        box-shadow: inset 0 0 1px grey,
-            /* hide white overflow (quirk) */
-            inset 10px 10px 10px hsla(205, 69%, 8%, .3),
-            /* inset shadow */
-            0 0 1px grey,
-            /* hide white overflow (ditto) */
-            20px 20px 10px hsla(205, 69%, 8%, .4),
-            /* inner outside shadow */
-            0 0 1px hsla(205, 69%, 8%, .3)
-    }
-
-    /* outer outside shadow */
-
-    [btn]:hover {
-        border-color: white;
-        font-weight: bolder;
-        font-size: 20px;
-    }
-
-
-    [btn]:active {
-        border-color: #00ff00;
-        box-shadow:
-            inset 0 0 50px #fff,
-            /* inner white */
-            inset 20px 0 80px green,
-            /* inner left magenta short */
-            inset -20px 0 80px #0ff,
-            /* inner right cyan short */
-            inset 20px 0 300px green,
-            /* inner left magenta broad */
-            inset -20px 0 300px #0ff,
-            /* inner right cyan broad */
-            0 0 50px #fff,
-            /* outer white */
-            -10px 0 80px green,
-            /* outer left magenta */
-            10px 0 80px #0ff;
-    }
-
-
-
-
-    .sidebar-blog-text,
-    .sidebar-about-text {
-        color: black;
-        font-weight: bolder;
-        font-size: 90%;
-        background-color: #ef6c33;
-        text-align: center;
-        border-top-left-radius: 50% 40%;
-        border-top-right-radius: 50% 40%;
-        border-bottom-left-radius: 50% 40%;
-        border-bottom-right-radius: 50% 40%;
-        padding: 5%;
-        border-style: solid;
-        border-color: #f0f;
-        border-width: thick;
-        box-shadow:
-            inset 0 0 50px #fff,
-            /* inner white */
-            inset 20px 0 80px #f0f,
-            /* inner left magenta short */
-            inset -20px 0 80px #0ff,
-            /* inner right cyan short */
-            inset 20px 0 300px #f0f,
-            /* inner left magenta broad */
-            inset -20px 0 300px #0ff,
-            /* inner right cyan broad */
-            0 0 50px #fff,
-            /* outer white */
-            -10px 0 80px #f0f,
-            /* outer left magenta */
-            10px 0 80px #0ff;
-
-    }
-
-    .sidebar-contact-text {
-        color: black;
-        font-weight: bolder;
-        left: 0;
-        width: 100%;
-        font-size: 90%;
-        background-color: #ef6c33;
-        text-align: center;
-        border-top-left-radius: 50% 40%;
-        border-top-right-radius: 50% 40%;
-        border-bottom-left-radius: 50% 40%;
-        border-bottom-right-radius: 50% 40%;
-        padding: 5%;
-        border-style: solid;
-        border-color: #f0f;
-        border-width: thick;
-        box-shadow:
-            inset 0 0 50px #fff,
-            /* inner white */
-            inset 20px 0 80px #f0f,
-            /* inner left magenta short */
-            inset -20px 0 80px #0ff,
-            /* inner right cyan short */
-            inset 20px 0 300px #f0f,
-            /* inner left magenta broad */
-            inset -20px 0 300px #0ff,
-            /* inner right cyan broad */
-            0 0 50px #fff,
-            /* outer white */
-            -10px 0 80px #f0f,
-            /* outer left magenta */
-            10px 0 80px #0ff;
-
-    }
-
-
-
-    .sidebar-home-text {
-        color: black;
-        font-weight: bolder;
-        font-size: 90%;
-        background-color: white;
-        text-align: center;
-        border-top-left-radius: 50% 10%;
-        border-top-right-radius: 50% 10%;
-        border-bottom-left-radius: 50% 10%;
-        border-bottom-right-radius: 50% 10%;
-        padding: 5%;
-        border-style: solid;
-        border-color: #9B870C;
-        border-width: thick;
-        box-shadow:
-            inset 0 0 50px #fff,
-            /* inner white */
-            inset 20px 0 80px yellow,
-            /* inner left magenta short */
-            inset -20px 0 80px yellow,
-            /* inner right cyan short */
-            inset 20px 0 300px yellow,
-            /* inner left magenta broad */
-            inset -20px 0 300px yellow,
-            /* inner right cyan broad */
-            0 0 50px #fff,
-            /* outer white */
-            -10px 0 80px yellow,
-            /* outer left magenta */
-            10px 0 80px yellow;
-
-    }
-
-    .ring h2:hover {
-        color: blue;
-        background-color: #97360c;
-        border-style: solid;
-        border-color: white;
-        border-width: thick;
-        box-shadow:
-            inset 0 0 50px #fff,
-            /* inner white */
-            inset 20px 0 80px #00ff00,
-            /* inner left magenta short */
-            inset -20px 0 80px #0ff,
-            /* inner right cyan short */
-            inset 20px 0 300px #00ff00,
-            /* inner left magenta broad */
-            inset -20px 0 300px #0ff,
-            /* inner right cyan broad */
-            0 0 50px #fff,
-            /* outer white */
-            -10px 0 80px #00ff00,
-            /* outer left magenta */
-            10px 0 80px #0ff;
-    }
-
-
-
-    /* remove blue tick when clicked*/
-    .noSelect {
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
 
 
 
