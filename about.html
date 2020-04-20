@@ -4,30 +4,59 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="about.css">
     <!--  socila  media -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="about.css">
     <meta charset="UTF-8">
     <title>about</title>
-
-
 
 </head>
 
 <body>
 
-
-
     <div class="wrapper">
+        <div id="upper-page-container">
+            <!--<div id="upper-page-content-container">-->
+            <div id="logo-container">
+                <img id="logo-image" src="icon.png">
+            </div><!-- end of logo -->
+            <div id="sidebar-container">
 
-        <div class="upper-page">
-            <div class="icon ">
-                <img src="icon.png" class="image-icon">
-            </div><!-- end of icon -->
-        </div><!-- end of upper-page -->
+                <div id="sidebar-home-container" btn class=" sidebar-element-container">
 
-        <div class="lower-page">
-            <div class="personal-link">
+                    <h2 id="sidebar-home-text" class="sidebar-text noSelect">
+                        Home
+                    </h2>
+                </div><!-- end of sidebar-home -->
+
+
+                <div id="sidebar-about-container" btn class=" sidebar-element-container">
+                    <h2 id="sidebar-about-text" class="sidebar-text noSelect">
+                        About
+                    </h2>
+                </div><!-- end of sidebar-about -->
+
+                <div id="sidebar-blog-container" btn class=" sidebar-element-container">
+                    <h2 id="sidebar-blog-text" class="sidebar-text noSelect">
+                        Blog
+                    </h2>
+                </div><!-- end of sidebar-blog -->
+
+                <div id="sidebar-contact-container" btn class=" sidebar-element-container">
+                    <h2 id="sidebar-contact-text" class="sidebar-text noSelect">
+                        Contact
+                    </h2>
+                </div><!-- end of sidebar-contact -->
+
+
+
+            </div><!-- end of sidebar -->
+
+        </div><!-- end of upper-page-container -->
+
+        <div id="lower-page-container">
+            <div id="personal-social-media-container">
                 <a href="https://www.linkedin.com/in/adama-zouma-553bba13a/" target="_blank" class="fa fa-linkedin">
                 </a><!-- end of linkedin-->
                 <a href="https://github.com/zoumson?tab=repositories" target="_blank" class="fa fa-github">
@@ -46,111 +75,155 @@
                 <a href="https://join.skype.com/invite/TopZPNVzvQ6t" target="_blank" class="fa fa-skype">
                 </a><!-- end of skype-->
             </div><!-- end of personal-link -->
-            <div class="main-content">
 
-                <dl class="main-content-desciption">
+            <div id="main-content-container">
+                <div id="main-content-row-1" class="my-row">
+                    <dl class="main-content-desciption">
 
-                    <dt class='data-title data-title-childhood noSelect'>
-                        <a href="#">
-                            Childhood
-                        </a>
-                    </dt>
-                    <dd class='title-childhood-description'>
-                        <a href="#" class="close  xSubTitleClose">X</a>
-                        Starting from my childhood days, being a school student, I have had a strong aptitude for science subjects with a constant urge to experiment and try out new things. I burnt the midnight oil to prove my mettle with successful results.
-                    </dd>
-                    <dt class='data-title data-title-undergraduate noSelect'>
-                        <a href="#">
-                            Undergraduate
-                        </a>
-                    </dt>
-
-
-                    <dd>
-                        <button class="close  xSubTitleClose">X</button>
-                        I chose to study Electrical Engineering to get better understanding on computer hardware as well as its architecture at National Cheng Kung University, one of the best universities of Taiwan. I am happy to state that I obtained <br><span id="award">“the outstanding student award”</span> in my undergraduate studies, being the first rank in the batch. Like a duck in the water, I was quickly absorbing and assimilating knowledge in subjects like Programming Languages, Computer Architecture, Data Structures and Algorithm.
-                    </dd>
-                    <dt class='data-title data-title-areas-of-interest noSelect'>
-                        <a href="#">
-                            Areas of Interest
-                        </a>
-                    </dt>
-                    <dd>
-                        <button class="close  xSubTitleClose">X</button>
-                        After graduating from undergraduate I did some self-study to enhance my programming skills. I want to use those skills to innovate the Computer Science area, precisely:<br><br>
-                        <div class="interest-areas-section">
-                            <ul class="interest-areas">
-                                <li>
-                                    <span class="interest-areas-item">Internet of Things </span>
-
-                                </li>
-                                <li>
-                                    <span class="interest-areas-item">Artificial Intelligence </span>
-
-                                </li>
-                                <li>
-                                    <span class="interest-areas-item">Data Engineering </span>
-                                </li>
-                                <li>
-                                    <span class="interest-areas-item">App and Web Development </span>
+                        <dt class='data-title data-title-childhood noSelect'>
+                            <a class="remove-link-decoration link-element" href="#">
+                                Childhood
+                            </a>
+                        </dt>
+                        <dd class='title-childhood-description'>
+                            Starting from my childhood days, being a school student, I have had a strong aptitude for science subjects with a constant urge to experiment and try out new things. I burnt the midnight oil to prove my mettle with successful results.
+                        </dd>
+                        <dt id="data-title-undergraduate" class='data-title  noSelect'>
+                            <a class="remove-link-decoration link-element" href="#">
+                                Undergraduate
+                            </a>
+                        </dt>
 
 
-                                </li>
+                        <dd>
+                            I chose to study Electrical Engineering to get better understanding on computer hardware as well as its architecture at National Cheng Kung University, one of the best universities of Taiwan. I am happy to state that I obtained <span id="award">“the outstanding student award”</span> in my undergraduate studies, being the first rank in the batch. Like a duck in the water, I was quickly absorbing and assimilating knowledge in subjects like Programming Languages, Computer Architecture, Data Structures and Algorithm.
+                        </dd>
+                        <dt class='data-title data-title-areas-of-interest noSelect'>
+                            <a class="remove-link-decoration link-element" href="#">
+                                Areas of Interest
+                            </a>
+                        </dt>
+                        <dd>
+                            After graduating from undergraduate I did some self-study to enhance my programming skills. I want to use those skills to innovate the Computer Science area, precisely:<br><br>
+                            <div class="interest-areas-section">
+                                <ul class="interest-areas">
+                                    <li>
+                                        <span class="interest-areas-item">Internet of Things </span>
 
-                            </ul>
-                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="interest-areas-item">Artificial Intelligence </span>
 
-                        <!--end of interest-areas-section -->
+                                    </li>
+                                    <li>
+                                        <span class="interest-areas-item">Data Engineering </span>
+                                    </li>
+                                    <li>
+                                        <span class="interest-areas-item">App and Web Development </span>
 
-                    </dd>
 
-                    <div id="signature">Adama ZOUMA..</div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+
+                        </dd>
+
+                        <div id="signature">Adama ZOUMA..</div>
 
 
 
 
 
-                </dl><!-- end of main-content-desciption list -->
+                    </dl>
+                </div>
+
             </div><!-- end of main-content -->
-            <div class="sidebar">
-                <div id="sidebar-shape-donut" class="donut-button">
 
-
-                    <div btn class="ring sidebar-home    sidebar-element">
-                        <h2 class="sidebar-home-text sidebar-text noSelect">
-                            Home
-                        </h2>
-                    </div><!-- end of sidebar-home -->
-
-
-                    <div btn class="ring sidebar-about sidebar-element    sidebar-element">
-                        <h2 class="sidebar-about-text sidebar-text  noSelect">
-                            About
-                        </h2>
-                    </div><!-- end of sidebar-about -->
-
-                    <div btn class="ring sidebar-blog sidebar-element    sidebar-element">
-                        <h2 class="sidebar-blog-text sidebar-text noSelect">
-                            Blog
-                        </h2>
-                    </div><!-- end of sidebar-blog -->
-
-                    <div btn class="ring sidebar-contact sidebar-element    sidebar-element">
-                        <h2 class="sidebar-contact-text sidebar-text noSelect">
-                            Contact
-                        </h2>
-                    </div><!-- end of sidebar-contact -->
-
-                </div><!-- end of sidebar-shape-donut -->
-
-            </div><!-- end of sidebar -->
 
         </div><!-- end of lower-page -->
 
     </div><!-- end of wrapper -->
-    <script src="about.js"></script>
 
+    <script src="about.js"></script>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+<!-- different 
+         <dl class="main-content-desciption">
+
+                        <dt class='data-title data-title-childhood noSelect'>
+                            <a href="#">
+                                Childhood
+                            </a>
+                        </dt>
+                        <dd class='title-childhood-description'>
+                            <a href="#" class="close  xSubTitleClose">X</a>
+                            Starting from my childhood days, being a school student, I have had a strong aptitude for science subjects with a constant urge to experiment and try out new things. I burnt the midnight oil to prove my mettle with successful results.
+                        </dd>
+                        <dt class='data-title data-title-undergraduate noSelect'>
+                            <a href="#">
+                                Undergraduate
+                            </a>
+                        </dt>
+
+
+                        <dd>
+                            <button class="close  xSubTitleClose">X</button>
+                            I chose to study Electrical Engineering to get better understanding on computer hardware as well as its architecture at National Cheng Kung University, one of the best universities of Taiwan. I am happy to state that I obtained <br><span id="award">“the outstanding student award”</span> in my undergraduate studies, being the first rank in the batch. Like a duck in the water, I was quickly absorbing and assimilating knowledge in subjects like Programming Languages, Computer Architecture, Data Structures and Algorithm.
+                        </dd>
+                        <dt class='data-title data-title-areas-of-interest noSelect'>
+                            <a href="#">
+                                Areas of Interest
+                            </a>
+                        </dt>
+                        <dd>
+                            <button class="close  xSubTitleClose">X</button>
+                            After graduating from undergraduate I did some self-study to enhance my programming skills. I want to use those skills to innovate the Computer Science area, precisely:<br><br>
+                            <div class="interest-areas-section">
+                                <ul class="interest-areas">
+                                    <li>
+                                        <span class="interest-areas-item">Internet of Things </span>
+
+                                    </li>
+                                    <li>
+                                        <span class="interest-areas-item">Artificial Intelligence </span>
+
+                                    </li>
+                                    <li>
+                                        <span class="interest-areas-item">Data Engineering </span>
+                                    </li>
+                                    <li>
+                                        <span class="interest-areas-item">App and Web Development </span>
+
+
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        
+
+                        </dd>
+
+                        <div id="signature">Adama ZOUMA..</div>
+
+
+
+
+
+                    </dl>
+                    -->

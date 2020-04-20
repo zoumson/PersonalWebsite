@@ -3,7 +3,7 @@
 
  /* sidebar click event trigger closing of actual page and openning of the button pressed page */
  /* home button pressed */
- var homeButton = document.querySelector(".sidebar-home-text");
+ var homeButton = document.querySelector("#sidebar-home-text");
  homeButton.addEventListener('click', () => {
      /* do nothing if actual page is home page */
      if (title != 'home') {
@@ -14,7 +14,7 @@
  });
 
  /* about button pressed */
- var aboutButton = document.querySelector(".sidebar-about-text");
+ var aboutButton = document.querySelector("#sidebar-about-text");
  aboutButton.addEventListener('click', () => {
      /* do nothing if actual page is about page */
      if (title != 'about') {
@@ -24,7 +24,7 @@
  });
 
  /* blog button pressed */
- var blogButton = document.querySelector(".sidebar-blog-text");
+ var blogButton = document.querySelector("#sidebar-blog-text");
  blogButton.addEventListener('click', () => {
      /* do nothing if actual page is blog page */
      if (title != 'blog') {
@@ -34,7 +34,7 @@
  });
 
  /* contact button pressed */
- var contactButton = document.querySelector(".sidebar-contact-text");
+ var contactButton = document.querySelector("#sidebar-contact-text");
  contactButton.addEventListener('click', () => {
      /* do nothing if actual page is contact page */
      if (title != 'contact') {

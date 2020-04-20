@@ -10,20 +10,53 @@
     <link rel="stylesheet" type="text/css" href="contact.css">
     <meta charset="UTF-8">
     <title>contact</title>
+
 </head>
 
 <body>
 
     <div class="wrapper">
+        <div id="upper-page-container">
+            <!--<div id="upper-page-content-container">-->
+            <div id="logo-container">
+                <img id="logo-image" src="icon.png">
+            </div><!-- end of logo -->
+            <div id="sidebar-container">
 
-        <div class="upper-page">
-            <div class="icon ">
-                <img src="icon.png" class="image-icon">
-            </div><!-- end of icon -->
-        </div><!-- end of upper-page -->
+                <div id="sidebar-home-container" btn class=" sidebar-element-container">
 
-        <div class="lower-page">
-            <div class="personal-link">
+                    <h2 id="sidebar-home-text" class="sidebar-text noSelect">
+                        Home
+                    </h2>
+                </div><!-- end of sidebar-home -->
+
+
+                <div id="sidebar-about-container" btn class=" sidebar-element-container">
+                    <h2 id="sidebar-about-text" class="sidebar-text noSelect">
+                        About
+                    </h2>
+                </div><!-- end of sidebar-about -->
+
+                <div id="sidebar-blog-container" btn class=" sidebar-element-container">
+                    <h2 id="sidebar-blog-text" class="sidebar-text noSelect">
+                        Blog
+                    </h2>
+                </div><!-- end of sidebar-blog -->
+
+                <div id="sidebar-contact-container" btn class=" sidebar-element-container">
+                    <h2 id="sidebar-contact-text" class="sidebar-text noSelect">
+                        Contact
+                    </h2>
+                </div><!-- end of sidebar-contact -->
+
+
+
+            </div><!-- end of sidebar -->
+
+        </div><!-- end of upper-page-container -->
+
+        <div id="lower-page-container">
+            <div id="personal-social-media-container">
                 <a href="https://www.linkedin.com/in/adama-zouma-553bba13a/" target="_blank" class="fa fa-linkedin">
                 </a><!-- end of linkedin-->
                 <a href="https://github.com/zoumson?tab=repositories" target="_blank" class="fa fa-github">
@@ -42,8 +75,58 @@
                 <a href="https://join.skype.com/invite/TopZPNVzvQ6t" target="_blank" class="fa fa-skype">
                 </a><!-- end of skype-->
             </div><!-- end of personal-link -->
-            <div class="main-content">
-                <div class="main-content-bgd-img-container">
+
+            <div id="main-content-container">
+                <div id="main-content-row-1" class="my-row">
+                    <div class="main-content-bgd-img-container">
+
+                    </div>
+                    <div class="main-content-form-container">
+                        <form action="" class="main-content-form-itself">
+                            <div class="main-content-form-title-container">
+                                <h4 id="form-title-text">Send Us a Message</h4>
+                            </div>
+                            <div class="main-content-form-first-name-container">
+                                <label for="contactFirstName" class="label-width">First name:</label>
+                                <input type="text" id="contact-first-name" name="contactFirstName" class="input-width" placeholder="First name" required>
+                            </div>
+                            <div class="main-content-form-last-name-container">
+                                <label for="contactLastName" class="label-width">Last name:</label>
+                                <input type="text" id="contact-last-name" name="contactLastName" class="input-width" placeholder="Last name" required>
+                            </div>
+                            <div class="main-content-form-email-container">
+                                <label for="contactEmail" type="email" class="label-width">E-mail:</label>
+                                <input type="text" id="contact-email" name="contactEmail" class="input-width" placeholder="abc@gmail.com" required>
+                            </div>
+                            <div class="main-content-form-message-container">
+                                <label for="contactMessage">Message:</label>
+
+                                <textarea id="contact-message" required></textarea>
+                            </div>
+                            <div class="main-content-form-submit-container">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div><!-- end of main-content -->
+
+
+        </div><!-- end of lower-page -->
+
+    </div><!-- end of wrapper -->
+
+    <script src="contact.js"></script>
+
+</body>
+
+</html>
+
+
+
+<!-- different 
+         <div class="main-content-bgd-img-container">
 
                 </div>
                 <div class="main-content-form-container">
@@ -73,49 +156,4 @@
                         </div>
                     </form>
                 </div>
-            </div> <!-- end of main content  -->
-
-            <div class="sidebar">
-                <div id="sidebar-shape-donut" class="donut-button">
-
-
-                    <div btn class="ring sidebar-home sidebar-element">
-                        <h2 class="sidebar-home-text sidebar-text noSelect">
-                            Home
-                        </h2>
-                    </div><!-- end of sidebar-home -->
-
-
-                    <div btn class="ring sidebar-about  sidebar-element">
-                        <h2 class="sidebar-about-text sidebar-text noSelect">
-                            About
-                        </h2>
-                    </div><!-- end of sidebar-about -->
-
-                    <div btn class="ring sidebar-blog sidebar-element">
-                        <h2 class="sidebar-blog-text sidebar-text noSelect">
-                            Blog
-                        </h2>
-                    </div><!-- end of sidebar-blog -->
-
-                    <div btn class="ring sidebar-contact sidebar-element">
-                        <h2 class="sidebar-contact-text noSelect sidebar-text">
-                            Contact
-                        </h2>
-                    </div><!-- end of sidebar-contact -->
-
-                </div><!-- end of sidebar-shape-donut -->
-
-            </div><!-- end of sidebar -->
-
-        </div><!-- end of lower-page -->
-
-    </div><!-- end of wrapper -->
-    <script src="contact.js"></script>
-
-
-
-
-</body>
-
-</html>
+-->

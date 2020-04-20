@@ -9,22 +9,54 @@
 
     <link rel="stylesheet" type="text/css" href="blog.css">
     <meta charset="UTF-8">
-
     <title>blog</title>
+
 </head>
 
 <body>
 
     <div class="wrapper">
+        <div id="upper-page-container">
+            <!--<div id="upper-page-content-container">-->
+            <div id="logo-container">
+                <img id="logo-image" src="icon.png">
+            </div><!-- end of logo -->
+            <div id="sidebar-container">
 
-        <div class="upper-page">
-            <div class="icon ">
-                <img src="icon.png" class="image-icon">
-            </div><!-- end of icon -->
-        </div><!-- end of upper-page -->
+                <div id="sidebar-home-container" btn class=" sidebar-element-container">
 
-        <div class="lower-page">
-            <div class="personal-link">
+                    <h2 id="sidebar-home-text" class="sidebar-text noSelect">
+                        Home
+                    </h2>
+                </div><!-- end of sidebar-home -->
+
+
+                <div id="sidebar-about-container" btn class=" sidebar-element-container">
+                    <h2 id="sidebar-about-text" class="sidebar-text noSelect">
+                        About
+                    </h2>
+                </div><!-- end of sidebar-about -->
+
+                <div id="sidebar-blog-container" btn class=" sidebar-element-container">
+                    <h2 id="sidebar-blog-text" class="sidebar-text noSelect">
+                        Blog
+                    </h2>
+                </div><!-- end of sidebar-blog -->
+
+                <div id="sidebar-contact-container" btn class=" sidebar-element-container">
+                    <h2 id="sidebar-contact-text" class="sidebar-text noSelect">
+                        Contact
+                    </h2>
+                </div><!-- end of sidebar-contact -->
+
+
+
+            </div><!-- end of sidebar -->
+
+        </div><!-- end of upper-page-container -->
+
+        <div id="lower-page-container">
+            <div id="personal-social-media-container">
                 <a href="https://www.linkedin.com/in/adama-zouma-553bba13a/" target="_blank" class="fa fa-linkedin">
                 </a><!-- end of linkedin-->
                 <a href="https://github.com/zoumson?tab=repositories" target="_blank" class="fa fa-github">
@@ -43,48 +75,20 @@
                 <a href="https://join.skype.com/invite/TopZPNVzvQ6t" target="_blank" class="fa fa-skype">
                 </a><!-- end of skype-->
             </div><!-- end of personal-link -->
-            <div class="main-content" style="color: white">
-                Coming soon...
 
-            </div>
-            <div class="sidebar">
-                <div id="sidebar-shape-donut" class="donut-button">
+            <div id="main-content-container">
+                <div id="main-content-row-1" class="my-row">
+                    Coming soon...
+                </div>
 
+            </div><!-- end of main-content -->
 
-                    <div btn class="ring sidebar-home sidebar-element">
-                        <h2 class="sidebar-home-text  sidebar-text noSelect">
-                            Home
-                        </h2>
-                    </div><!-- end of sidebar-home -->
-
-
-                    <div btn class="ring sidebar-about sidebar-element ">
-                        <h2 class="sidebar-about-text sidebar-text noSelect">
-                            About
-                        </h2>
-                    </div><!-- end of sidebar-about -->
-
-                    <div btn class="ring sidebar-blog sidebar-element">
-                        <h2 class="sidebar-blog-text sidebar-text noSelect">
-                            Blog
-                        </h2>
-                    </div><!-- end of sidebar-blog -->
-
-                    <div btn class="ring sidebar-contact sidebar-element">
-                        <h2 class="sidebar-contact-text sidebar-text noSelect">
-                            Contact
-                        </h2>
-                    </div><!-- end of sidebar-contact -->
-
-                </div><!-- end of sidebar-shape-donut -->
-
-            </div><!-- end of sidebar -->
 
         </div><!-- end of lower-page -->
 
     </div><!-- end of wrapper -->
-    <script src="blog.js"></script>
 
+    <script src="blog.js"></script>
 
 </body>
 

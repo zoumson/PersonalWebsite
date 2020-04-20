@@ -1,4 +1,3 @@
-/*common-start */
 html,
 body {
 
@@ -8,7 +7,7 @@ body {
     height: 100%;
     position: fixed;
     width: 100%;
-    background-color: black;
+    background-color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: fantasy, 'Rubik Mono One', sans-serif;
@@ -32,57 +31,66 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 /* upper page container*/
-.upper-page {
-    height: 20%;
+#upper-page-container {
+    /*
+    height: 12%;
     width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
+*/
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100px !important;
+    top: 0;
+    background-color: black;
+
 
 }
+
+
 
 /* upper page items*/
 
-.icon {
+#logo-container {
+    color: white;
+    position: absolute;
     height: 100%;
-    width: 10%;
+    width: 7%;
     margin-left: 1%;
     padding: 1%;
+    //float: left;
+    left: 0;
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    position: -webkit-sticky;
-    position: sticky;
-
+    justify-content: center;
+    align-items: center;
 
 }
 
 
-.icon img {
-    height: 100%;
-    width: 100%;
-    //width: 20%;
-    //height: 5%;
-    transform: scaleX(-1)
+#logo-image {
+    height: 85%;
+    width: 80%;
 }
 
 /* lower page container*/
-.lower-page {
-    margin-top: 5%;
+#lower-page-container {
+    margin-top: 150px;
     display: flex;
-    height: 80%;
+    height: 100%;
     width: 100%;
     justify-content: space-between;
-    padding-bottom: 2%;
+
+
 }
 
 /*lower-page left  section */
 
-.personal-link {
+#personal-social-media-container {
     border-radius: 30%;
-    background-color: white;
+    background-color: black;
     position: -webkit-sticky;
     position: sticky;
     width: 4%;
@@ -156,130 +164,105 @@ body {
 }
 
 .fa-github {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
+
 }
 
 .fa-stack-overflow {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 
 /*lower-page middle section*/
-.main-content {
-    overflow: auto;
-    float: left;
-    padding-top: 4%;
-    margin-left: 1%;
-    height: 100%;
-    width: 55%;
+#main-content-container {
+    overflow-y: auto;
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-content: space-between;
 }
 
-/*sidebar */
-
-.donut-button {
-    position: relative;
-    width: 30%;
-    height: 80%;
-    margin: auto;
-    cursor: pointer;
-    margin-top: 2%;
-}
-
-#sidebar-shape-donut {
-    width: 80%;
-    height: 80%;
-
-}
-
-.sidebar-home {
+#main-content-row-1 {
     width: 100%;
     height: 100%;
-    top: 0.0%;
-    left: 0.0%;
-
-}
-
-.sidebar-about {
-    width: 80%;
-    height: 70%;
-    top: 15%;
-    right: 10%
-}
-
-.sidebar-blog {
-    width: 60%;
-    height: 40%;
-    top: 28%;
-    right: 20%;
-
-}
-
-.sidebar-contact {
-    width: 45%;
-    height: 20%;
-    top: 40%;
-    right: 28%;
-    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    position: relative;
 }
 
 
 
-.ring {
+
+
+
+/*lower-page right section*/
+
+#sidebar-container {
+
+    //float: right;
+    right: 0;
     position: absolute;
-    transition: all 50ms;
-    color: white;
-    display: inline;
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    padding: 1%;
+
 }
 
-.ring:hover {
-    transform: scale(1.2);
+.sidebar-element-container {
+    bottom: 0;
+    cursor: pointer;
+    width: 24%;
+    height: 50%;
 }
 
-.ring:active {
-    transform: scale(0.95);
+.sidebar-element-container:hover {
+    transform: scale(1.01);
+
 }
 
+.sidebar-element-container:active {
+    transform: scale(0.98);
+}
 
 .sidebar-text {
     font-weight: bolder;
     font-size: 90%;
     text-align: center;
-    border-radius: 50% 10%;
+    border-radius: 10%;
     padding: 5%;
     border-style: solid;
     border-width: thick;
 
 }
 
-.sidebar-blog-text,
-.sidebar-about-text,
-.sidebar-contact-text {
+.sidebar-text:hover {
+    color: white;
+    border-color: white;
+    background-color: grey;
+}
+
+#sidebar-about-text:not(:hover),
+#sidebar-home-text:not(:hover),
+#sidebar-blog-text:not(:hover) {
     color: white;
     border-color: white;
     background-color: black;
-
 }
 
-.sidebar-home-text {
+#sidebar-contact-text:not(:hover) {
     color: black;
     border-color: black;
     background-color: white;
 }
-
-
-.sidebar-text:hover {
-    color: white;
-    background-color: grey;
-    border-style: solid;
-    border-color: white;
-    border-width: thick;
-}
-
-
 
 /* remove blue tick when clicked*/
 .noSelect {
@@ -293,50 +276,46 @@ body {
 
 
 
+/*media-start */
+/* media-start-1 */
 
 
+/*
+@media (max-height: 580px) and (min-width: 1000px) {
 
+    body,
+    html {
+        background-color: yellow;
 
+    }
 
+    #sidebar-container {
+        flex-direction: row;
+        background-color: transparent;
+        justify-content: flex-start;
+        align-items: flex-start;
 
+    }
 
-.icon,
-.main-content,
-.sidebar {
-    padding: 1%;
+    .sidebar-element-container {
+        width: 25%;
+    }
+
+    #cv-download-container {
+        order: 1;
+    }
+
+    #self-description-container {
+        order: 2;
+    }
 }
-
-.main-content::-webkit-scrollbar {
-    display: none;
-}
-
-
-.content-background img {
-    // width: 50%;
-    height: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-
-}
+*/
+/* media-end-21*/
+/* media-end */
 
 
-.sidebar {
-    height: 100%;
-    width: 28%;
-    position: -webkit-sticky;
-    position: sticky;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-
-}
 
 
-/*common -end*/
 /* different-start */
 .main-content-bgd-img-container {
     height: 100%;
@@ -349,7 +328,8 @@ body {
 
 .main-content-form-container {
     width: 59%;
-    height: 100%;
+    height: 80%;
+    margin-bottom: 2%;
     /*
     border-color: red;
     border-width: thick;
@@ -358,22 +338,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 1%;
-    box-shadow:
-        inset 0 0 5px #fff,
-        /* inner white */
-        inset 2px 0 8px #f0f,
-        /* inner left magenta short */
-        inset -2px 0 8px #f0f,
-        /* inner right cyan short */
-        inset 2px 0 30px #f0f,
-        /* inner left magenta broad */
-        inset -2px 0 30px #f0f,
-        /* inner right cyan broad */
-        0 0 5px #fff,
-        /* outer white */
-        -1px 0 8px #f0f,
-        /* outer left magenta */
-        1px 0 8px #f0f;
+    border-radius: 10%;
+    border-color: black;
+    border-width: thick;
+    border-style: groove;
+
 }
 
 .main-content-form-itself {
@@ -381,13 +350,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100%;
 
-}
-
-.main-content-form-title-container {
-    height: 12%;
 }
 
 .main-content-form-first-name-container {
@@ -397,7 +363,9 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+
 }
+
 
 .input-width {
     width: 60%;
@@ -421,16 +389,11 @@ form input {
     background-color: white;
 }
 
-input:focus {
-    outline: none !important;
-    border: 4px solid #f0f;
-    box-shadow: 0 0 20px #f0f;
-}
-
+input:focus,
 textarea:focus {
     outline: none !important;
-    border: 4px solid #f0f;
-    box-shadow: 0 0 20px #f0f;
+    border: 4px solid grey;
+    box-shadow: 0 0 10px black;
 }
 
 form label {
@@ -452,16 +415,17 @@ form label {
 }
 
 .main-content-form-title-container {
+    width: 80%;
     color: white;
-    background-color: grey;
-    /*background-color: #DAFFFF;*/
+    background-color: black;
     font-weight: bolder;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 20%;
-    box-shadow: 0 0 20px black;
+    border-radius: 10%;
+    padding: 2%;
+
 }
 
 .main-content-form-message-container {
@@ -480,6 +444,9 @@ form label {
 }
 
 .main-content-form-submit-container input {
+    width: 80%;
+    background-color: black;
+    color: white;
     padding: 1%;
     border-radius: 20%;
     display: flex;
@@ -487,25 +454,8 @@ form label {
     justify-content: center;
     align-items: center;
     border-style: solid;
-    border-color: #9B870C;
+    border-color: black;
     border-width: thick;
-    box-shadow:
-        inset 0 0 5px #fff,
-        /* inner white */
-        inset 2px 0 8px yellow,
-        /* inner left magenta short */
-        inset -2px 0 8px yellow,
-        /* inner right cyan short */
-        inset 2px 0 3px yellow,
-        /* inner left magenta broad */
-        inset -2px 0 30px yellow,
-        /* inner right cyan broad */
-        0 0 5px #fff,
-        /* outer white */
-        -1px 0 8px yellow,
-        /* outer left magenta */
-        1px 0 8px yellow;
-
 }
 
 
@@ -516,256 +466,3 @@ form label {
 }
 
 /* different-end */
-
-/*media-start */
-/* media-start-1 */
-@media only screen and (max-width: 1150px) {
-
-    /* 
-    body,
-    html {
-        background-color: blue;
-
-    }
-*/
-
-    .sidebar-home {
-        width: 100%;
-        height: 100%;
-        border-width: 30px;
-        top: 0.0%;
-        left: 0.0%;
-
-    }
-
-    .sidebar-about {
-        width: 100%;
-        height: 70%;
-        border-width: 30px;
-        top: 15%;
-        left: 0.0%;
-    }
-
-    .sidebar-blog {
-        width: 100%;
-        height: 40%;
-        border-width: 20px;
-        top: 30%;
-        left: 0.0%;
-    }
-
-    .sidebar-contact {
-        width: 100%;
-        height: 20%;
-        border-width: 20px;
-        top: 40%;
-        left: 0.0%;
-        margin-bottom: 10%;
-    }
-
-    .sidebar-blog-text,
-    .sidebar-about-text,
-    .sidebar-contact-text,
-    .sidebar-home-text {
-        border-width: thin;
-
-    }
-
-
-
-    .ring {
-        position: absolute;
-        border-color: grey;
-        border-style: solid;
-        border-radius: 10%;
-        transition: all 50ms;
-        color: white;
-        display: inline;
-    }
-
-
-
-}
-
-/* media-end-1 */
-
-/* media-start-2 */
-@media only screen and (max-width: 800px) {
-
-    /* 
-    body,
-    html {
-        background-color: red;
-
-    }
-*/
-
-    .sidebar-home {
-        width: 100%;
-        height: 100%;
-        top: 0.0%;
-        left: 0.0%;
-
-    }
-
-    .sidebar-about {
-        width: 100%;
-        height: 70%;
-        top: 15%;
-        left: 0.0%;
-    }
-
-    .sidebar-blog {
-        width: 100%;
-        height: 40%;
-        top: 30%;
-        left: 0.0%;
-    }
-
-    .sidebar-contact {
-        width: 100%;
-        height: 20%;
-        top: 40%;
-        left: 0.0%;
-        margin-bottom: 10%;
-    }
-
-    .self-description {
-        order: 2;
-    }
-
-    .cv-download {
-        order: 1;
-    }
-
-
-
-
-}
-
-/* media-end-2 */
-
-/* media-start-3 */
-@media only screen and (max-height: 800px) {
-
-    /*
-    body,
-    html {
-        background-color: yellow;
-
-    }
-*/
-
-    .sidebar-home {
-        width: 100%;
-        height: 100%;
-        top: 0.0%;
-        left: 0.0%;
-
-    }
-
-    .sidebar-about {
-        width: 100%;
-        height: 70%;
-        top: 15%;
-        left: 0.0%;
-    }
-
-    .sidebar-blog {
-        width: 100%;
-        height: 40%;
-        top: 30%;
-        left: 0.0%;
-    }
-
-    .sidebar-contact {
-        width: 100%;
-        height: 20%;
-        top: 45%;
-        left: 0.0%;
-        margin-bottom: 0%;
-    }
-
-
-
-
-}
-
-/* media-end-3*/
-
-/* media-start-4*/
-@media (max-height: 600px) and (min-width: 700px) {
-
-    /*
-    html,
-    body {
-        background-color: grey;
-    }
-*/
-    .self-description {
-        order: 2;
-        height: 85%;
-
-    }
-
-    .lower-page {
-        padding-bottom: 5%;
-    }
-
-    .cv-download {
-        order: 1;
-        top: 0;
-        margin-bottom: 0;
-        height: 40%;
-    }
-
-
-
-    /*sidebar */
-    .sidebar {
-        height: 100%;
-        width: 40%;
-        position: -webkit-sticky;
-        position: sticky;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-
-    }
-
-    .donut-button {
-        position: relative;
-        width: 30%;
-        height: 80%;
-        margin: auto;
-        cursor: pointer;
-        margin-top: 2%;
-        display: flex;
-    }
-
-    #sidebar-shape-donut {
-        width: 100%;
-        height: 80%;
-
-    }
-
-    .sidebar-element {
-        width: 25%;
-
-    }
-
-
-    .ring {
-        position: relative;
-        display: inline;
-    }
-
-
-
-
-
-}
-
-/* media-end-4*/
-
-/* media-end */
