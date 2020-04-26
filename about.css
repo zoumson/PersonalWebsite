@@ -9,8 +9,8 @@ body {
   background-color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: sintony, fantasy, 'Rubik Mono One', sans-serif;
-
+  font-family: 'Bodoni MT', Didot, 'Didot LT STD', 'Hoefler Text', Garamond,
+    'Times New Roman', serif;
   cursor: default;
 }
 
@@ -212,7 +212,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 120%;
+  font-size: 100%;
+}
+
+.indentation {
+  padding-left: 10%;
+}
+
+.dl-dd {
+  width: 100%;
 }
 #award {
   font-weight: bolder;

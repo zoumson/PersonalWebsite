@@ -9,8 +9,8 @@ body {
   background-color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: sintony, fantasy, 'Rubik Mono One', sans-serif;
-
+  font-family: 'Bodoni MT', Didot, 'Didot LT STD', 'Hoefler Text', Garamond,
+    'Times New Roman', serif;
   cursor: default;
 }
 
