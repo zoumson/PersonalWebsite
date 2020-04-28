@@ -24,7 +24,12 @@
       <div id="upper-page-container">
         <!--<div id="upper-page-content-container">-->
         <div id="logo-container">
-          <img id="logo-image" src="icon.png" />
+          <img
+            id="logo-image"
+            src="icon.png"
+            class="noSelect"
+            draggable="false"
+          />
         </div>
         <!-- end of logo -->
         <div id="sidebar-container">
@@ -144,10 +149,12 @@
             <div class="main-content-form-container">
               <form action="" class="main-content-form-itself">
                 <div class="main-content-form-title-container">
-                  <div id="form-title-text">Send Us a Message</div>
+                  <div class="noSelect" id="form-title-text">
+                    Send Us a Message
+                  </div>
                 </div>
                 <div class="main-content-form-first-name-container">
-                  <label for="contactFirstName" class="label-width"
+                  <label for="contactFirstName" class="label-width noSelect"
                     >First name:</label
                   >
                   <input
@@ -160,7 +167,7 @@
                   />
                 </div>
                 <div class="main-content-form-last-name-container">
-                  <label for="contactLastName" class="label-width"
+                  <label for="contactLastName" class="label-width noSelect"
                     >Last name:</label
                   >
                   <input
@@ -173,7 +180,10 @@
                   />
                 </div>
                 <div class="main-content-form-email-container">
-                  <label for="contactEmail" type="email" class="label-width"
+                  <label
+                    for="contactEmail"
+                    type="email"
+                    class="label-width noSelect"
                     >E-mail:</label
                   >
                   <input
@@ -186,7 +196,7 @@
                   />
                 </div>
                 <div class="main-content-form-message-container">
-                  <label for="contactMessage">Message:</label>
+                  <label class="noSelect" for="contactMessage">Message:</label>
 
                   <textarea id="contact-message" required></textarea>
                 </div>
