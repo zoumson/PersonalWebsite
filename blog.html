@@ -145,7 +145,38 @@
 
         <div id="main-content-container">
           <div id="main-content-row-1" class="my-row">
-            Coming soon...
+            <div class="row-1-inner-wrapper"> 
+            <div class="weather-title-container">
+              <h4 class="weather-title-text">Find Weather</h4>
+            </div>
+            <div class="input ">
+              <input type="text" placeholder="Enter the city" class="input_text">
+              <input type="submit" value="Submit" class="submit noSelect">
+              <div id="language-weather-container" >
+                <label class="language-title" for="language">Choose a language:</label>
+                <select id="language-weather">
+
+                  <option selected="selected"value="zu">Zulu </option>
+                  <option value="en">English</option>
+                  <option value="fr">French</option>
+                  <option value="zh_tw">Chinese</option>
+                </select>
+              </div>
+ 
+
+            </div>
+            <div class="container display-weather" >
+              <div class="card">
+                <span  ><a href="#" class="xSubTitleClose noSelect remove-link-decoration">X</a></span>
+                <h1 class="name" id="name"></h1>
+                <div class="temp"></div>
+                <div class="desc"></div>
+              </div>
+            </div>
+          </div>
+          </div><!-- end of row-1 -->
+        
+
           </div>
         </div>
         <!-- end of main-content -->

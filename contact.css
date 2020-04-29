@@ -311,7 +311,6 @@ body {
 
 .main-content-form-last-name-container {
   margin: auto;
-  //height: 10%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -342,7 +341,6 @@ form label {
 
 .main-content-form-email-container {
   margin: auto;
-  //height: 10%;
   width: 100%;
   display: flex;
   flex-direction: row;
